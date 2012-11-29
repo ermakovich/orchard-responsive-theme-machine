@@ -1,4 +1,4 @@
-Orchard Responsive Theme Machine
+Orchard Responsive Theme Machine ([Demo](http://ermakovich.github.com/orchard-responsive-theme-machine/))
 ================================
 
 Orchard default theme with a "mobile-first" responsive design.
