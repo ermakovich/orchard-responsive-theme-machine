@@ -1,6 +1,6 @@
-# Orchard ![](http://ermakovich.github.com/orchard-responsive-theme-machine/index_files/orchard.ico) Responsive Theme Machine ([Demo](http://ermakovich.github.com/orchard-responsive-theme-machine/))
+# Orchard Responsive Theme Machine ([Demo](http://ermakovich.github.com/orchard-responsive-theme-machine/))
 
-Orchard default theme with a "mobile-first" responsive design.
+[Orchard CMS]((http://orchardproject.net) default theme with a "mobile-first" responsive design.
 It's aimed on providing an equal user experience for different viewport sizes.
 
 The idea of this project is inspired mainly by the [HTML5 Boilerplate Project](http://h5bp.com/).
