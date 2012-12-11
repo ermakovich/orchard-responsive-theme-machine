@@ -3,7 +3,6 @@
 @{
     RegisterLink(new LinkEntry {Type = "image/x-icon", Rel = "shortcut icon", Href = Url.Content("~/modules/orchard.themes/Content/orchard.ico")});
     
-    Style.Include("normalize.css", "normalize.min.css");
     Script.Include("vendor/modernizr-2.6.2-respond-1.1.0.min.js").AtHead();
     
     string title = Convert.ToString(Model.Title);
