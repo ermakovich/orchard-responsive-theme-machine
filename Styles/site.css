@@ -581,9 +581,6 @@ button:focus, .button:focus {
         padding:0 18px;
     }
 
-    #layout-navigation { border-bottom: 1px solid #dbdbdb; }
-
-
     /* Aside Zones */
     /* If zone 1 is on */
     .aside-1 #layout-content { float: right; width: 600px; }
