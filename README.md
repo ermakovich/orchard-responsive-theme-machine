@@ -7,10 +7,10 @@ The idea of this project is inspired mainly by the [HTML5 Boilerplate Project](h
 
 ### Layout modes, that are currently implemented
 
-* Viewport `width < 960px` (default "mobile-first");
-* Viewport `width >= 960px` (wide viewport);
-
-More layout modes will be added in order to provide better user experience.
+* Default "mobile-first" (viewport `width < 480px`);
+* Viewport `min-width: 480px`;
+* Viewport `min-width: 768px`;
+* Viewport `min-width: 1140px` (wide viewport);
 
 ### Features, that are actually inherited from the H5BP project
 
