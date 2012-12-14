@@ -544,9 +544,9 @@ button:focus, .button:focus {
 
 /* Media Queries
 ***************************************************************/
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
     #branding { text-align: left; }
+
     #layout-navigation { border-bottom: 1px solid #dbdbdb; }
 
     nav ul li
@@ -564,6 +564,10 @@ button:focus, .button:focus {
         padding:0 18px;
     }
 
+} /* end of media only screen and (min-width: 480px) */
+
+
+@media only screen and (min-width: 768px) {
     /* Aside Zones */
     /* If zone 1 is on */
     .aside-1 #layout-content { float: right; width: 65%; }
@@ -607,7 +611,8 @@ button:focus, .button:focus {
 
     /*4 zones on */
     .split-1234 #footer-quad > div { width:25%; } /* If zones 1, 2, 3, 4 are on */
-}
+} /* end of media only screen and (min-width: 768px) */
+
 
 @media only screen and (min-width: 1140px) {
     #layout-header, #layout-navigation, #layout-featured, #layout-before-main, #layout-main, #layout-footer, #layout-after-main, #layout-tripel {
