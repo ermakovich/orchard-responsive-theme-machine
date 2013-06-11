@@ -231,26 +231,21 @@ textarea {
 /* Theme
 ***************************************************************/
 
-nav ul
-{
+nav ul {
     padding: 0px;
     margin: 0px;
 }
 
-nav ul li
-{
-    border:1px solid #dbdbdb;
-    border-top:none;
+nav ul li {
+    border-top:1px solid #dbdbdb;
     background:#f6f6f6;
 }
-nav ul li:first-child { border-top:1px solid #dbdbdb; }
 
-nav > ul li.current
-{
+nav > ul li.current {
     background:#fff;
 }
-nav ul li a
-{
+nav ul li a {
+    padding-left: 10px;
     display:block;
     color: #333;
     font-size: 1.077em;
@@ -258,28 +253,23 @@ nav ul li a
     line-height:24px;
 }
 
-
 /* first level */
-nav > ul > li { text-align:center; }
-nav > ul > li:hover > ul { display:block; }
-nav > ul > li:hover { }
+nav > ul > li {
+    border:1px solid #dbdbdb;
+    border-top:none;
+}
+
+nav > ul > li.first {
+    border:1px solid #dbdbdb;
+}
 
 /* second level */
-nav > ul > li > ul { margin: 24px 0px 0px -1px; padding:0px; display:none; position:absolute; border: 1px solid #dbdbdb;}
-nav > ul > li > ul > li { list-style-type:none; margin:0px; border: none;}
-nav > ul > li > ul > li > a { display:block; text-decoration:none;}
-nav > ul > li > ul > li:hover > a { }
-
-nav > ul > li > ul > li:hover > ul { display:block; }
+nav > ul > li > ul > li > a { padding-left: 25px; }
 
 /* third level */
-nav > ul > li > ul > li > ul { margin: -20px -1px 0px 90% ; padding:0px; display:none; position:absolute; border: 1px solid #dbdbdb; }
-nav > ul > li > ul > li > ul > li { list-style-type:none; margin:0px; border: none;}
-nav > ul > li > ul > li > ul > li > a { display:block; text-decoration:none;}
-nav > ul > li > ul > li > ul > li:hover > a { }
+nav > ul > li > ul > li > ul > li > a { padding-left: 40px; }
 
 /* deeper levels */
-nav > ul > li > ul > li > ul ul { display:none; }
 
 /* Breadcrumb */
 nav ul.breadcrumb
@@ -549,21 +539,51 @@ button:focus, .button:focus {
 
     #layout-navigation { border-bottom: 1px solid #dbdbdb; }
 
-    nav ul li
-    {
-        float:left;
-        border:1px solid #dbdbdb;
-        margin:0 2px -1px 0;
-    }
-    nav > ul li.current
-    {
+    /* first level */
+    nav > ul > li { float:left; }
+    nav > ul > li > a { float:left; padding:0 18px; }
+    nav > ul > li:hover > ul { display:block; }
+    nav > ul > li:hover { }
+    nav > ul > li.current {
         border-bottom: 1px solid #fff;
     }
-    nav ul li a
-    {
-        padding:0 18px;
-    }
 
+    /* second level */
+    nav > ul > li > ul {
+        display:none;
+        position:absolute;
+        top: 100%;
+        left: -1px;
+        border: 1px solid #dbdbdb;
+    }
+    nav > ul > li > ul > li { list-style-type:none; margin:0px; border: none;}
+    nav > ul > li > ul > li > a { padding: 0 18px; display:block; text-decoration:none;}
+    nav > ul > li > ul > li:hover > a { }
+
+    nav > ul > li > ul > li:hover > ul { display:block; }
+
+    /* third level */
+    nav > ul > li > ul > li > ul {
+        position:absolute;
+        top: -1px;
+        left: 100%;
+        display:none;
+        border: 1px solid #dbdbdb;
+    }
+    nav > ul > li > ul > li > ul > li { list-style-type:none; margin:0px; border: none;}
+    nav > ul > li > ul > li > ul > li > a { padding: 0 18px; display:block; text-decoration:none;}
+    nav > ul > li > ul > li > ul > li:hover > a { }
+
+    /* deeper levels */
+    nav > ul > li > ul > li > ul ul { display:none; }
+
+
+    nav ul li {
+        border:1px solid #dbdbdb;
+        margin:0 2px -1px 0;
+        white-space: nowrap;
+        position: relative;
+    }
 } /* end of media only screen and (min-width: 480px) */
 
 
